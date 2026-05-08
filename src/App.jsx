@@ -9,6 +9,8 @@ import { Button } from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import Home from './components/Home';
 import Course from './components/Course';
+import Allcourses from './components/Allcourses';
+import Addcourse from './components/Addcourse';
 
 function App() {
 
@@ -22,8 +24,10 @@ function App() {
     <div>
       <ToastContainer/>
       <Home/>
-      <Course course={{ title: "Django Course", description: "This is Django Course" }}/>
-      <Course course={{ title: "Java Course", description: "This is Java Course" }}/>
+      <hr/>
+      <Allcourses/>
+      
+      <Addcourse/>
     </div>
   );
 }

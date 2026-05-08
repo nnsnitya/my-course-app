@@ -10,7 +10,7 @@ const Course = ({ course }) => {
                 <CardText>{course.description}</CardText>
                 <Container className="text-center">
                     <Button color="danger">Delete</Button>
-                    <Button color="warning">Update</Button>
+                    <Button color="warning mx-2">Update</Button>
                 </Container>
             </CardBody>
         </Card>
