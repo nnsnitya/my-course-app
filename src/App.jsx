@@ -12,6 +12,7 @@ import Course from './components/Course';
 import Allcourses from './components/Allcourses';
 import Addcourse from './components/Addcourse';
 import LeftMenus from './components/LeftMenus';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -23,14 +24,24 @@ function App() {
 
   return (
     <div>
-      <ToastContainer/>
-      <Header/>
-      <Container>
-        <Row>
-          <Col md={4}><LeftMenus/></Col>
-          <Col md={8}><Home/></Col>
-        </Row>
-      </Container>
+      <Router>
+        <ToastContainer/>
+        <Header/>
+        <Container>
+          <Row>
+            <Col md={4}><LeftMenus/></Col>
+            <Col md={8}>
+              <Routes>
+                <Route path='/' Component={Home} exact />
+                <Route path='add-course' Component={Addcourse} exact />
+                <Route path='view-courses' Component={Allcourses} exact />
+              </Routes>
+
+            </Col>
+          </Row>
+        </Container>
+      </Router>
+      
     </div>
   );
 }
