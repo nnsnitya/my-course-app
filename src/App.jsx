@@ -5,12 +5,13 @@ import heroImg from './assets/hero.png';
 import './App.css';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
+import { Button, Col, Container, Row } from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import Home from './components/Home';
 import Course from './components/Course';
 import Allcourses from './components/Allcourses';
 import Addcourse from './components/Addcourse';
+import LeftMenus from './components/LeftMenus';
 
 function App() {
 
@@ -23,11 +24,13 @@ function App() {
   return (
     <div>
       <ToastContainer/>
-      <Home/>
-      <hr/>
-      <Allcourses/>
-      
-      <Addcourse/>
+      <Header/>
+      <Container>
+        <Row>
+          <Col md={4}><LeftMenus/></Col>
+          <Col md={8}><Home/></Col>
+        </Row>
+      </Container>
     </div>
   );
 }
