@@ -27,10 +27,10 @@ function App() {
       <Router>
         <ToastContainer/>
         <Header/>
-        <Container>
+        <Container fluid className='main-container'>
           <Row>
             <Col md={4}><LeftMenus/></Col>
-            <Col md={8}>
+            <Col md={8} className='content-area'>
               <Routes>
                 <Route path='/' Component={Home} exact />
                 <Route path='add-course' Component={Addcourse} exact />

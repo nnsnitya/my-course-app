@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <div>
-            <Container className="bg-light border">
+            <Container className="bg-light">
                 <h2>This is Reactstrap component</h2>
                 <p>Powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers.</p>
                 <Button color='primary' outline>Start Using</Button>

@@ -109,3 +109,24 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+body {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-container {
+  margin-top: 100px;
+}
+
+.content-area {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}

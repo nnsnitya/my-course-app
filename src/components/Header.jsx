@@ -3,7 +3,7 @@ import { Card, CardBody } from "reactstrap";
 
 function Header({name, title}) {
     return (
-        <div>
+        <div className="header">
             <Card style={{background: "yellow"}}>
                 <CardBody>
                     <h2>Welcome to Courses Application</h2>

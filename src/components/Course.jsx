@@ -19,7 +19,7 @@ const Course = ({ course, update }) => {
     };
 
     return (
-        <Card>
+        <Card className="my-2">
             <CardBody>
                 <CardSubtitle className="font-weight-bold">{course.title}</CardSubtitle>
                 <CardText>{course.description}</CardText>
