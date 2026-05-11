@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 
 const Addcourse = () => {
+
+    useEffect(() => {
+        document.title = "Add a Course";
+    }, []);
 
     return (
         <div>

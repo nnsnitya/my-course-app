@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Course from "./Course";
 
 
 const Allcourses = () => {
+
+    useEffect(() => {
+        document.title = "All Courses";
+    }, []);
 
     const [courses, setCourses] = useState([
         {title: "Java Course", description: "This is Java course"},
