@@ -38,7 +38,7 @@ const Addcourse = () => {
 
     return (
         <div>
-            <h1>Fill Course Details</h1>
+            <h2>Fill Course Details</h2>
             <Form onSubmit={handleForm}>
                 <FormGroup>
                     <Label for="userId">Course Id</Label>

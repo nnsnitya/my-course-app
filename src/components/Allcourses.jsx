@@ -40,7 +40,7 @@ const Allcourses = () => {
 
     return (
         <div>
-            <h1>All Courses</h1>
+            <h2>All Courses</h2>
             <p>List of courses are as follows</p>
             {
                 courses.length > 0 ?
